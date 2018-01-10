@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 Chrome versions",
+            "last 2 Firefox versions",
+            "last 2 iOS versions",
+            "ie 11"
+          ]
+        },
+        "useBuiltIns": "entry"
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    ["transform-react-jsx", { "pragma":"preact.h" }]
+  ],
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}
