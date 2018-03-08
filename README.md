@@ -16,7 +16,7 @@ Original built to be included in a Wikimedia page, no styles are included, but t
 
 You need a current version of Node.js installed (currently testing and building with 9.3.0, but latest LTS should be fine (and probably Node v6 as well)).
 
-Clone the project, and run `npm install` to install the dependencies. (This project does not include the package-lock.json, to encourage using the latest versions. Please file an issue if a dependency is out of date.)
+Clone the project, and run `npm install` to install the dependencies.
 
 Run the development server with `npm start`. This will open the test page in your browser, and rebuild then refresh the page on source changes.
 
