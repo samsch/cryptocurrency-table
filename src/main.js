@@ -49,7 +49,6 @@ class App extends preact.Component {
             .then(({ res, data }) => {
               if (res.status !== 200) {
                 this.setState(prev => {
-                  errorLog('eh?', prev);
                   return {
                     currencies: Object.assign({}, prev.currencies, {
                       [id]: Object.assign({}, prev.currencies[id], {
@@ -61,7 +60,6 @@ class App extends preact.Component {
                 return;
               }
               this.setState(prev => {
-                errorLog('eh?', prev);
                 return {
                   currencies: Object.assign({}, prev.currencies, {
                     [id]: Object.assign({}, prev.currencies[id], {
